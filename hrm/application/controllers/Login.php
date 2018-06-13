@@ -5,7 +5,7 @@ class Login extends CI_Controller {
 
 	public function index(){
 		if($this->session->userdata('user_id')){
-			return redirect('../admin/dashboard/dashboard_admin');
+			return redirect('admin/dashboard/dashboard_admin');
 		}
 		$this->load->helper('form');
 		$this->load->view('signin');
